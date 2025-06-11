@@ -1,0 +1,25 @@
+{
+  "name": "llm-proxy",
+  "author": "blue.pen5805",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "test": "vitest",
+    "test-ci": "vitest run",
+    "cf-typegen": "wrangler types",
+    "prettier": "prettier --write .",
+    "prettier-ci": "prettier --check ."
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.8.34",
+    "@types/node": "^22.15.29",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vitest": "^3.1.4",
+    "wrangler": "^4.18.0"
+  }
+}
